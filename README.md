@@ -2,7 +2,7 @@
 - (in base directory) `touch (filename).OpenFOAM` - generate file for ParaView  
 - keep copy of _0_ folder as _init_
 ## interFoam
-(working off standard file directorys structure)  
+(working off standard file directory structure)  
 - `blockMesh` - generate mesh - _blockMeshDict_
 - `setFields` / `setExprFields` - intialize _alpha.water_ - _setFields_ / _setExprFields_
 - `decomposePar` - split regions over processors - _decomposeParDict_
