@@ -1,6 +1,7 @@
 # OpenFOAM
-- (in base directory) `touch (filename).OpenFOAM` - generate file for ParaView  
-- keep copy of _0_ folder as _init_
+- keep copy of _0_ folder as _init_  
+- `touch (filename).OpenFOAM` - generate file for ParaView  
+- `foamToVTK` - generate VTK folder for VisIt
 ## interFoam
 (working off standard file directory structure)  
 - `blockMesh` - generate mesh - _blockMeshDict_
