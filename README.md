@@ -1,5 +1,5 @@
 # OpenFOAM
-- keep copy of _0_ folder as _init_  
+- keep copy of _0_ folder as _0.orig_  
 - `touch (filename).OpenFOAM` - generate file for __ParaView__  
 - `foamToVTK` - generate VTK folder for __VisIt__
 ## interFoam
