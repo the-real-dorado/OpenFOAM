@@ -9,3 +9,6 @@
 - `decomposePar` - split regions over processors - _decomposeParDict_
 - `mpirun -np (processors) interFoam -parallel` / `interFoam` - run simulation
 - `reconstructPar` - combine regions
+
+## Adaptive Mesh Refinement
+- precision error - check `writePrecision` in `controlDict`
