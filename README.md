@@ -5,10 +5,11 @@
 ## interFoam
 (working off standard file directory structure)  
 - `blockMesh` - generate mesh - _blockMeshDict_
-- `setFields` / `setExprFields` - intialize _alpha.water_ - _setFields_ / _setExprFields_
+- `setFields` / `setExprFields` - intialize _alpha.*_ - _setFields_ / _setExprFields_
 - `decomposePar` - split regions over processors - _decomposeParDict_
 - `mpirun -np (processors) interFoam -parallel` / `interFoam` - run simulation
-- `reconstructPar` - combine regions
+- (if AMR) `reconstructParMesh` - combine mesh regions
+- `reconstructPar` - combine fields
 
 ## Adaptive Mesh Refinement
 - precision error - check `writePrecision` in `controlDict`
