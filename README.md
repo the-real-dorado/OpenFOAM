@@ -13,3 +13,4 @@
 
 ## Adaptive Mesh Refinement
 - precision error - check `writePrecision` in `controlDict`
+- for 2D - needs `symmetryPlane`
