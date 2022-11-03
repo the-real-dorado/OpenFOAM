@@ -45,7 +45,8 @@ boundary
 (
     Ain
     {
-        type patch;
+        type cyclic;
+        neighbourPatch  Aout;
         faces
         (
             (2 3 9 8)
@@ -53,7 +54,8 @@ boundary
     }
     Aout
     {
-        type patch;
+        type cyclic;
+        neighbourPatch  Ain;
         faces
         (
             (4 5 11 10)
@@ -69,7 +71,8 @@ boundary
     }
     Bin
     {
-        type patch;
+        type cyclic;
+        neighbourPatch  Bout;
         faces
         (
             (0 5 11 6)
@@ -77,7 +80,8 @@ boundary
     }
     Bout
     {
-        type patch;
+        type cyclic;
+        neighbourPatch  Bin;
         faces
         (
             (1 2 8 7)

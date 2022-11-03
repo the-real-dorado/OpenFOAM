@@ -39,7 +39,7 @@ expressions
         dimensions  [0 0 0 0 0 0 0];
         variables ("scale = 0.1" "height = scale");
         condition #{ pos().y() > height #};
-        expression #{vector (-0.5, 0, 0) #};
+        expression #{vector (-1, 0, 0) #};
     }
 );
 

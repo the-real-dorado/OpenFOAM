@@ -10,7 +10,7 @@ FoamFile
     version     2.0;
     format      ascii;
     class       volScalarField;
-    object      alpha.air;
+    object      alpha.other;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -27,6 +27,10 @@ boundaryField
     "(symm1|symm2)"
     {
         type    symmetryPlane;
+    }
+    "(Ain|Aout|Bin|Bout)"
+    {
+        type    cyclic;
     }
 }
 

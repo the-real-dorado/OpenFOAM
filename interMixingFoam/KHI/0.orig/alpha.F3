@@ -20,11 +20,11 @@ internalField   uniform 0;
 
 boundaryField
 {
-    Bin
-    {
-        type        fixedValue;
-        value       uniform 1;        
-    }
+    // Bin
+    // {
+    //     type        fixedValue;
+    //     value       uniform 1;        
+    // }
     Bside
     {
         type        inletOutlet;
@@ -40,6 +40,10 @@ boundaryField
     "(symm1|symm2)"
     {
         type        symmetryPlane;
+    }
+    "(Ain|Aout|Bin|Bout)"
+    {
+        type        cyclic;
     }
 }
 

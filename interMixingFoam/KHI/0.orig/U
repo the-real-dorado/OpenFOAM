@@ -20,16 +20,16 @@ internalField   uniform (0 0 0);
 
 boundaryField
 {
-    "(Ain|Aout)"
-    {
-        type        fixedValue;
-        value       uniform (-0.5 0 0);
-    }
-    "(Bin|Bout)"
-    {
-        type        fixedValue;
-        value       uniform ( 0.5 0 0);
-    }
+    // "(Ain|Aout)"
+    // {
+    //     type        fixedValue;
+    //     value       uniform (-0.5 0 0);
+    // }
+    // "(Bin|Bout)"
+    // {
+    //     type        fixedValue;
+    //     value       uniform ( 0.5 0 0);
+    // }
     "(Aside|Bside)"
     {
         type            pressureInletOutletVelocity;
@@ -38,6 +38,10 @@ boundaryField
     "(symm1|symm2)"
     {
         type        symmetryPlane;
+    }
+    "(Ain|Aout|Bin|Bout)"
+    {
+        type        cyclic;
     }
 }
 
