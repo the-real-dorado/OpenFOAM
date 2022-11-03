@@ -4,6 +4,7 @@
 - `foamToVTK` - generate VTK folder for __VisIt__
 
 ## interFoam / interMixingFoam
+### Steps
 (working off standard file directory structure)  
 - `blockMesh` - generate mesh
 - `setFields` + `setExprFields` - intialize _alpha.*_
@@ -11,7 +12,6 @@
 - (if parallel) `mpirun -np (processors) interFoam -parallel` / `interFoam` - run simulation
 - (if AMR) `reconstructParMesh` - combine mesh regions
 - `reconstructPar` - combine fields
-
 ### Workflow
 - setup case for a `interMixingFoam` simulation (F1 immiscible and F2,F3 miscible)
 - set `alpha.F3` as one of the fluids and either `alpha.F1` or `alpha.F2` as "blank"
