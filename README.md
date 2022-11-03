@@ -6,7 +6,7 @@
 ## interFoam / interMixingFoam
 (working off standard file directory structure)  
 - `blockMesh` - generate mesh - _blockMeshDict_
-- `setFields` / `setExprFields` - intialize _alpha.*_ - _setFields_ / _setExprFields_
+- `setFields` + `setExprFields` - intialize _alpha.*_ - _setFields_ / _setExprFields_
 - (if parallel) `decomposePar` - split regions over processors - _decomposeParDict_
 - (if parallel) `mpirun -np (processors) interFoam -parallel` / `interFoam` - run simulation
 - (if AMR) `reconstructParMesh` - combine mesh regions
