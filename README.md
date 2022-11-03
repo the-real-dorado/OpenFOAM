@@ -12,13 +12,13 @@
 - (if AMR) `reconstructParMesh` - combine mesh regions
 - `reconstructPar` - combine fields
 ### Workflow
-- setup case for a `interMixingFoam` simulation (F1 immiscible and F2,F3 miscible)
-- set `alpha.F3` as one of the fluids and either `alpha.F1` or `alpha.F2` as "blank"
-- in `dynamicMeshDict` - set field to `alpha.F3`
+- setup case for a _interMixingFoam_ simulation (F1 immiscible and F2,F3 miscible)
+- set _alpha.F3_ as one of the fluids and either _alpha.F1_ or _alpha.F2_ as "blank"
+- in _dynamicMeshDict_ - `field alpha.F3`
 - to toggle miscibility
-  - rename `alpha.F1` and `alpha.F2`
-  - update `setField` and `setExprField`
+  - rename _alpha.F1_ and _alpha.F2_
+  - update _setFieldDict_ and _setExprFieldDict_
 
 ## Adaptive Mesh Refinement
-- precision error - check `writePrecision` in `controlDict`
+- precision error - check `writePrecision` in _controlDict_
 - for 2D - needs `symmetryPlane`
