@@ -5,7 +5,6 @@
 
 ## interFoam / interMixingFoam
 ### Steps
-(working off standard file directory structure)  
 - `blockMesh` - generate mesh
 - `setFields` + `setExprFields` - intialize _alpha.*_
 - (if parallel) `decomposePar` - split over processors
